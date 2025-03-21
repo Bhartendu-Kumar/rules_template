@@ -148,7 +148,7 @@ Create unit tests for any new functionality. Run all tests from the <ANALYZE COD
 After you propose a change, run the tests yourself, and verify that it passes. Do not rely on me to do this, and be certain that my code will not be broken.
 </NO BREAKAGE ASSERTION>
 
-1. Write test logic in seperate files than the code implementation for teh functionality to keep the code clean and maintainable
+1. Write test logic in separate files than the code implementation for teh functionality to keep the code clean and maintainable
 
 <TEST PLAN>
 - Think of sufficiently exhaustive test plans for the functionalities added/updated against the requirements and desired outcomes.
