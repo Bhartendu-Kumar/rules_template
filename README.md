@@ -25,7 +25,7 @@ Both people exploring AI without prior knowledge but tasting the AI/LLM/Agents l
 4. **Common Memory Bank:** We have a common memory bank for all the AI assistants. This maintains same context across all the AI assistants. 
 5. **Fundamental Software Engineering Principles:** This is to ensure that the AI is following the best practices in software development. Its **Agile** Development workflow.
 Enough talking, let's get started.
-
+5. **AUTOMATICALLY updates documentation after any planning/implementation/debugging:** The custom prompts are designed such that it will ALWAYS upadate the documentation after any change. So you focus on building, and it will take care of other things.
 
 ## Quickstart: Using this Template for AI Coding
 
@@ -40,7 +40,7 @@ This template provides a starting point for AI pair-coding projects. To get star
 
 **DONE BASIC SETUP**
 This will setup the Custom prompts and Memory Bank. What's left are Custom Modes. They are not necessary, but do that if you want to save tokens ($$).
-
+**Note: DO NOT COPY `.git` file from this repo. Cautiously AVOID that.**
 ---
 
 ### ADVANCED SETUP:
@@ -483,6 +483,20 @@ This structure ensures that different aspects of the project, such as code, test
 9.  **Potential for Auto-Evolving Rules:**  Opens up possibilities for AI-driven rule evolution and refinement, allowing the template to adapt and improve over time.
 
 By adhering to the principles and structure outlined in this Rules Template, development teams can leverage AI coding assistants more effectively, ensuring consistency, quality, and maintainability across their projects.
+
+## Specialized Use Case Prompts
+
+The [prompts directory](./prompts) contains specialized prompts for different use cases:
+
+- [DevOps Initialization](./prompts/devops_initialization.md) - Initialize the rules_template for DevOps-focused projects
+- [Machine Learning Project Initialization](./prompts/ml_project_initialization.md) - Set up rules_template for ML and data science projects
+- [Web Application Initialization](./prompts/web_app_initialization.md) - Configure rules_template for web app development
+- [Mobile App Development Initialization](./prompts/mobile_app_initialization.md) - Adapt rules_template for mobile app projects
+- [Data Engineering Initialization](./prompts/data_engineering_initialization.md) - Apply rules_template to data pipeline projects
+- [GitHub Pages Initialization](./prompts/github_pages_initialization.md) - Configure rules_template with GitHub Pages for documentation
+- [Debugging and TDD Workflow](./prompts/debugging_tdd_workflow.md) - Establish systematic debugging and Test-Driven Development practices
+
+See the [Prompts Guide](./prompts/README.md) for information on how to add more specialized prompts
 
 ## To-Do:
 - [ ] 1: ignore files unified system to save tokens.

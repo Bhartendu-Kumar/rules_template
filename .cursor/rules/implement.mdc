@@ -8,6 +8,10 @@ description: Include these rules while IMPLEMENTATION/Coding.
 globs: 
 alwaysApply: true
 ---
+Before every code implementation/change ALWAYS do 2 things:
+a. Read and understand the documentation in `docs/` and `tasks/`
+a. Get required code context from `src` and other codes at other places.
+---
 # IMPLEMENTATION (ACT MODE/Code MODE):
 <PROGRAMMING PRINCIPLES>
 - algorithm_efficiency: use the most efficient algorithms and data structures
@@ -116,3 +120,8 @@ After you propose a change, run the tests yourself, and verify that it passes. D
 </TESTING>
 
 - When implementing something new, be relentless and implement everything to the letter. Stop only when you're done till successfully testing, not before.
+
+---
+After every code implementation/change ALWAYS do 2 things:
+a. Update other possibly affected codes in `src` and other codes at other places.
+b. Update the documentation in `docs/` and `tasks/`.

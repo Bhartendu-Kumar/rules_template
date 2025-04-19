@@ -8,6 +8,11 @@ description: Always include these rules.
 globs: 
 alwaysApply: true
 ---
+Before every Plan/Architect task ALWAYS do 3 things:
+a. Read the existing documentation in `docs/` : i. `docs/architecture.md`, ii. `docs/product_requirement_docs.md`, iii. `docs/technical.md`
+b. Read the plans and related task planning & context in `tasks/`: i. `tasks/active_context.md`, ii. `tasks/tasks_plan.md`
+c. Get required solution conytext from the code files in `src` and other codes at other places.
+---
 - Below is the Planning Workflow to follow:
 
 1. UNDERSTAND the REQUIREMENTS:
@@ -62,3 +67,9 @@ d. Can use <WEB USE> if needed to do research.
 - restate my query in your own words if necessary after giving the solution
 </REASONING PRESENTATION>
 - Before implementing, validate the SOLUTION plan produced by <REASONING PRESENTATION>.
+
+---
+
+After every Plan/Architect task ALWAYS do 2 things:
+a. Document the plan into existing documentation and update files in `docs/` : i. `docs/architecture.md`, ii. `docs/product_requirement_docs.md`, iii. `docs/technical.md`
+b. Document the plans and related task planning & context in `tasks/`: i. `tasks/active_context.md`, ii. `tasks/tasks_plan.md`
