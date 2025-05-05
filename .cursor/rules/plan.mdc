@@ -11,7 +11,7 @@ alwaysApply: true
 Before every Plan/Architect task ALWAYS do 3 things:
 a. Read the existing documentation in `docs/` : i. `docs/architecture.md`, ii. `docs/product_requirement_docs.md`, iii. `docs/technical.md`
 b. Read the plans and related task planning & context in `tasks/`: i. `tasks/active_context.md`, ii. `tasks/tasks_plan.md`
-c. Get required solution conytext from the code files in `src` and other codes at other places.
+c. Get required solution context from the code files in `src` and other codes at other places.
 ---
 # Below is the Planning Workflow to follow:
 
@@ -32,8 +32,8 @@ c. Get required solution conytext from the code files in `src` and other codes a
 - Break down the problem into key concepts and smaller sub-problems.
 </DECOMPOSE>
 a. Think about all possible ways to solve the problem.
-b. Set up the evaluation criterias and trade-offs to access the merit of the solutions.
-c. Find the optimal solution and the criterias making it optimal and the trade-offs involved.
+b. Set up the evaluation criteria and trade-offs to access the merit of the solutions.
+c. Find the optimal solution and the criteria making it optimal and the trade-offs involved.
 <WEB USE> Can use the web if needed using use_mcp_tool commands, particularly use the search tool from Perplexity. Example:
 <use_mcp_tool>
 <server_name>perplexity-mcp</server_name>

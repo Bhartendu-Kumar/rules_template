@@ -1,9 +1,9 @@
 # V2: Updates [Major Token Saving updates]
-## 1. The Instruction Template follows Agile Developement Methodology (Software Development Life Cycle) and Software Engineering Best Practices.
+## 1. The Instruction Template follows Agile Development Methodology (Software Development Life Cycle) and Software Engineering Best Practices.
 ## 2. **3 New Modes** (Lean on Token Usage) are added to Cursor and RooCode.
 ## 3. Built on a Stable Base version used by 300+ users, based on **Agile** Workflow.
 ## Changelog:
-1. The seperation and independence of the rules from (a) Cursor, (b) CLINE, (c) RooCode, and (d) etc, is very precise.
+1. The separation and independence of the rules from (a) Cursor, (b) CLINE, (c) RooCode, and (d) etc, is very precise.
     a. One file only defined, and then symbolic links created to reuse it.
     b. `.cursor/rules/` directory for Cursor, has the original files. `.roo/` and `.clinerules/` are symbolic links to these original files.
 
@@ -14,18 +14,18 @@
 # Motive:
 To have a comprehensive and optimal Custom User Prompt (Rules) for AI coding. These kind of rules are very much required as the **Quality** of Outputs is a function $[response \, Quality = f(prompt, LLM \, model)]$. Thus, for best performance we need very detailed instructions while also giving the LLM the freedom to explore and learn. I came up with this after first reading many many existing rules, experimenting with mine and finalized these as tested against real use-cases. 
 **Applications:** Tested for building Agentic products, plus writing research papers in AI.
-## Target Audience: Begineer Fiendly & Potential Unlock for Experienced Folks.
+## Target Audience: Beginner Friendly & Potential Unlock for Experienced Folks.
 Both people exploring AI without prior knowledge but tasting the AI/LLM/Agents landscape. And experieced folks adapting to and integrating AI in their workflow. As better prompts may lead to better outputs. 
 
 ## Features:
 1. **Cross-Platform Compatibility:** Use in *Any* IDE *Any* number of different computers for the same project! Respects Cursor, CLINE, RooCode Rule guidelines and mechanisms natively. Like For CLINE rules use use **PLAN Mode** as in their system prompts, whereas for RooCode we use **Architect Mode**. Similarly **Act Mode** for CLINE and **Code Mode** for RooCode. **Debug Mode** for RooCode has been used additionally. 
 2. **Latest Compatibility:** Designed to be compatible with the latest versions of Cursor and CLINE, RooCode. We have used `.cursor/rules/` directory for Cursor and ditched the deprecated `.cursorrules` file.For RooCode, we have used `.roo/` directory and sub directories within and not the `.clinerules` file. With CLINE we have used the the `.clinerules/` directory with sub-directories **not**  **deprecated** `.clinerules` file .
-3. **Minimal Token Usage:** We have tried to make it **AS MUCH AS POSSIBLE lean on TOKEN USAGE**. We have (a) incorporated newer Modes in RooCode and Cursor, that uses minimum tokens with efficiently carrying out tasks. (b) load only relevnt context.
-- We have organized the rule files to be only added when demanded (on-demand-loading). For Cursor we have seperated the rules into seperate `.mdc` files in `.cursor/rules/` directory, and configured the files so as to be added only when required. For RooCode, we have seperated the ruls into the mode specific rule files `.roo/rules-{mode}/` and not everything in `.clinerules` file. This, will only load the required rules for corresponding modes. For CLINE we did some workaround! But not much support there to save tokens for custom prompts.
+3. **Minimal Token Usage:** We have tried to make it **AS MUCH AS POSSIBLE lean on TOKEN USAGE**. We have (a) incorporated newer Modes in RooCode and Cursor, that uses minimum tokens with efficiently carrying out tasks. (b) load only relevant context.
+- We have organized the rule files to be only added when demanded (on-demand-loading). For Cursor we have separated the rules into separate `.mdc` files in `.cursor/rules/` directory, and configured the files so as to be added only when required. For RooCode, we have separated the rules into the mode specific rule files `.roo/rules-{mode}/` and not everything in `.clinerules` file. This, will only load the required rules for corresponding modes. For CLINE we did some workaround! But not much support there to save tokens for custom prompts.
 4. **Common Memory Bank:** We have a common memory bank for all the AI assistants. This maintains same context across all the AI assistants. 
 5. **Fundamental Software Engineering Principles:** This is to ensure that the AI is following the best practices in software development. Its **Agile** Development workflow.
 Enough talking, let's get started.
-5. **AUTOMATICALLY updates documentation after any planning/implementation/debugging:** The custom prompts are designed such that it will ALWAYS upadate the documentation after any change. So you focus on building, and it will take care of other things.
+5. **AUTOMATICALLY updates documentation after any planning/implementation/debugging:** The custom prompts are designed such that it will ALWAYS update the documentation after any change. So you focus on building, and it will take care of other things.
 
 ## Quickstart: Using this Template for AI Coding
 
@@ -34,7 +34,7 @@ This template provides a starting point for AI pair-coding projects. To get star
 
 1.  **Cursor:** put the `.cursor/rules/` directory in your project root.
 2.  **RooCode:** put the `.roo/` directory in your project root.
-3.  **CLINE:** put the `.clinerules/` direcctory in your project root.
+3.  **CLINE:** put the `.clinerules/` directory in your project root.
 
 *Note: All these can be stacked on top of each other, simultaneously.*
 
@@ -127,7 +127,7 @@ Fill as per the image.
 
 In "*Advanced options*", in the box for custom instructions, paste:
 
-> 1. Ask for clarifications and indepth follow-ups as much as possible.
+> 1. Ask for clarifications and in-depth follow-ups as much as possible.
 >2. Break down the problem into key concepts and smaller sub-problems iteratively.
 >3. Explore all directions possible.
 >4. Very rigrous and deep Reasoning.
@@ -202,7 +202,7 @@ Now just start coding using Cursor/CLINE/RooCode/etc.
 It's done and you need not do anything. Just for your info.
 
 #### .roo/
-1. `.roo/rules/memory.mdc` has symbolic link to `.cursor/rules/memeory.mdc`
+1. `.roo/rules/memory.mdc` has symbolic link to `.cursor/rules/memory.mdc`
 2. `.roo/rules/directory-structure.mdc` has symbolic link to `.cursor/rules/directory-structure.mdc`
 3. `.roo/rules/rules.mdc` has symbolic link to `.cursor/rules/rules.mdc`
 Mode Specific Instructions:
@@ -233,7 +233,7 @@ Just LLM call in this mode. NO file Reads, Write, Run Command. It is like a trad
 This has 3 capabilities: (a) Read, (b) Write and (c) Run commands. This is a very lean version that supports these requirements.
 
 ## 3. MCP
-This Mode is bare ninimum System prompt for well executing the MCP server.
+This Mode is bare minimum System prompt for well executing the MCP server.
 The system prompt has been trimmed down to the minimum.
 
 **Note:** *This mode is to be used along with other modes, and not standalone.* There's a tool *`attemp_completion`* that is used to complete the task , which I removed from the system prompt. Still have *`switch_mode`* to switch the modes.
@@ -291,16 +291,16 @@ This template is built upon two fundamental pillars:
 **b) Software Development Documentation:**  Leveraging comprehensive documentation to provide context, guide development, and serve as persistent memory for AI coding assistants.
 
 By combining these principles, the Rules Template aims to provide a structured and reliable approach to AI-assisted coding.
-And based on the popular knowledge and research in these two fileds, we came up with this template.
+And based on the popular knowledge and research in these two fields, we came up with this template.
 
 # Rule Files:
 
 This template relies on a carefully orchestrated system of directories and files for Cursor, Windsurf, CLINE and RooCode Within each environment, there are exactly three crucial files that shape how the AI operates:
 
 1. <strong>rules</strong> –
-   Thois can house generic rules. Bring your own flavour to this minimal document. Below are three files: (a) plan, (b) implement, (c) debug, that defines workflows for these three tasks based on refining 100s of rule repositories and software engineering best practices:
+   This can house generic rules. Bring your own flavour to this minimal document. Below are three files: (a) plan, (b) implement, (c) debug, that defines workflows for these three tasks based on refining 100s of rule repositories and software engineering best practices:
 
-2. <strong>plan</strong> – Defines the Workflow to be followed for any Planning based on *chain of thinking*. includes **exhaustive searching and optimal plan, rigourous reasoning and user validation**.
+2. <strong>plan</strong> – Defines the Workflow to be followed for any Planning based on *chain of thinking*. includes **exhaustive searching and optimal plan, rigorous reasoning and user validation**.
 3. <strong>implement</strong> - Defines the Workflow to be followed for any Implementation. inspired by concepts like **seperation of concerns, modular design, and incremental development**. Has testing mandatory after every significant implementation.
 4. <strong>debug</strong> - This file defines rules for debugging when stuck in a loop or a hard debugging. Supports looking at the web and for previously solved errors too.
 5. <strong>memory</strong> –
@@ -347,7 +347,7 @@ The `rules` files (located in `clinerules/rules` and `cursor/rules/rules.mdc`) d
    it starts with making the requirements very clear and asking as much clarification as possible in the beginning. This is always the first task software development. Where all the requirements are made as precise and verbose as possible so as to save Time and effort later in redoing. Plus anticipate Major bottlenecks ahead of any work.
 
 **(ii) Exhaustive Searching and Optimal Plan:**
-  exhaustive searching and optimal plan: search all possible directions in which the problem can be solved. And find out the optimal solution, which can be also a amalgamation of many different approaches. And reason rigourously, why the chosen approach is optimal.
+  exhaustive searching and optimal plan: search all possible directions in which the problem can be solved. And find out the optimal solution, which can be also a amalgamation of many different approaches. And reason rigorously, why the chosen approach is optimal.
 
 **(iii) User Validation:**
 
@@ -361,7 +361,7 @@ The `rules` files (located in `clinerules/rules` and `cursor/rules/rules.mdc`) d
 
    after implementation, suggesting possible optimisation to be done or possible, additional features for security or functionality to be added.
 
-So this five phased approach, is for a software life-cycle. But this can be applied for any grnuarlity, like entire project or a single functionality. For example, very clearly recording the requirement for the functionality and asking clarifying questions is as good for a single small functionality as for a program.
+So this five phased approach, is for a software life-cycle. But this can be applied for any granularity, like entire project or a single functionality. For example, very clearly recording the requirement for the functionality and asking clarifying questions is as good for a single small functionality as for a program.
 So this five phased, solution strategy workflow is to be followed at every part of development.
 
 ### 2. Memory: Persistent Project Documentation

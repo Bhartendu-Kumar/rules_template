@@ -349,7 +349,7 @@ Ask for the following information from the user (if not present in environment_d
 2. Default Shell
 3. Home Directory
 4. Current Working Directory
-It is absolutely necessary to have this infomration before executing any commands, or planning any file operations. These values are super critical for executing commands and file operations correctly. Ask explicitly for these values if they are not provided directly.
+It is absolutely necessary to have this information before executing any commands, or planning any file operations. These values are super critical for executing commands and file operations correctly. Ask explicitly for these values if they are not provided directly.
 
 When the user initially gives you a task, a recursive list of all filepaths in the current workspace directory will be included in environment_details. This provides an overview of the project's file structure, offering key insights into the project from directory/file names (how developers conceptualize and organize their code) and file extensions (the language used). This can also guide decision-making on which files to explore further. If you need to further explore directories such as outside the current workspace directory, you can use the "Write" mode.
 
