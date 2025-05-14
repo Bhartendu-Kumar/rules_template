@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/bhartendu-kumar-rules-template-badge.png)](https://mseep.ai/app/bhartendu-kumar-rules-template)
+
 # V2: Updates [Major Token Saving updates]
 ## 1. The Instruction Template follows Agile Developement Methodology (Software Development Life Cycle) and Software Engineering Best Practices.
 ## 2. **3 New Modes** (Lean on Token Usage) are added to Cursor and RooCode.
